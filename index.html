@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="fonts/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="libs/bootstrap5/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" media="screen">
+	<link rel="stylesheet icon" type="text/css" href="css/style.css" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=480"> -->
+	<meta charset="UTF-8">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+			<div class="container mob">
+				<div class="row">
+					<div class="col-12 mob-top-col">
+						<div class="mh-logo">
+							<a href="#!"><img src="images/logo.png" alt=""></a>
+						</div>
+						<div class="mh-assets">
+							<a href="#!"><img src="images/favorite-icon.svg" alt=""></a>
+							<a href="#!"><img src="images/basket-icon.svg" alt=""></a>
+							<a href="#!" class="menu-opener">
+								<span class="mob-menu-btn">
+									<span class="one"></span>
+									<span class="two"></span>
+									<span class="three"></span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-12">
+						<div class="search">
+							<form action="#!" method="post" id="search-form">
+								<input type="search" name="search" id="search" placeholder="Поиск по 50 видам изделий">
+							</form>
+						</div>
+					</div>
+					<div class="menu-info">
+						<div class="menu-block">
+							<div class="menu-head">
+								<a href="#!"><img src="images/logo.png" alt=""></a>
+								<a href="#!" class="mob-close"><img src="images/mob-close.svg" alt=""></a>
+							</div>
+							<div class="row menu-body">
+								<div class="col-6">
+									<a href="#!" class="body-link">Войти в кабинет</a>
+									<a href="#!" class="body-link">Избранное</a>
+									<a href="#!" class="body-link">Отзывы</a>
+									<a href="#!" class="body-link">Поддержка</a>
+								</div>
+								<div class="col-6">
+									<a href="#!" class="body-link">О компании</a>
+									<a href="tel:" class="body-tel">8 (495) 419-18-31</a>
+									<a href="tel:" class="body-tel">8 (495) 419-18-31</a>
+								</div>
+								<div class="col-12">
+									<a href="#!" class="art-btn">
+										<span>
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 18C7.37109 18 5.86523 17.5986 4.48242 16.7959C3.09961 15.9932 2.00684 14.9004 1.2041 13.5176C0.401367 12.1348 0 10.6289 0 9C0 7.37109 0.401367 5.86523 1.2041 4.48242C2.00684 3.09961 3.09961 2.00684 4.48242 1.2041C5.86523 0.401367 7.37109 0 9 0C10.3125 0 11.2031 0.161133 11.6719 0.483398C12.1406 0.805664 12.375 1.39453 12.375 2.25C12.375 2.625 12.2871 2.98242 12.1113 3.32227C11.9355 3.66211 11.7422 3.9375 11.5312 4.14844C11.3203 4.35938 11.127 4.59668 10.9512 4.86035C10.7754 5.12402 10.6875 5.37891 10.6875 5.625C10.6875 6.75 11.25 7.3125 12.375 7.3125C12.6211 7.3125 12.876 7.22461 13.1396 7.04883C13.4033 6.87305 13.6406 6.67969 13.8516 6.46875C14.0625 6.25781 14.3379 6.06445 14.6777 5.88867C15.0176 5.71289 15.375 5.625 15.75 5.625C16.5938 5.625 17.1797 5.86523 17.5078 6.3457C17.8359 6.82617 18 7.71094 18 9C18 10.2188 17.7627 11.3848 17.2881 12.498C16.8135 13.6113 16.1748 14.5693 15.3721 15.3721C14.5693 16.1748 13.6113 16.8135 12.498 17.2881C11.3848 17.7627 10.2188 18 9 18ZM5.0625 14.625C5.53125 14.625 5.92969 14.4609 6.25781 14.1328C6.58594 13.8047 6.75 13.4062 6.75 12.9375C6.75 12.4688 6.58594 12.0703 6.25781 11.7422C5.92969 11.4141 5.53125 11.25 5.0625 11.25C4.59375 11.25 4.19531 11.4141 3.86719 11.7422C3.53906 12.0703 3.375 12.4688 3.375 12.9375C3.375 13.4062 3.53906 13.8047 3.86719 14.1328C4.19531 14.4609 4.59375 14.625 5.0625 14.625ZM3.9375 5.625C3.46875 5.625 3.07031 5.78906 2.74219 6.11719C2.41406 6.44531 2.25 6.84375 2.25 7.3125C2.25 7.78125 2.41406 8.17969 2.74219 8.50781C3.07031 8.83594 3.46875 9 3.9375 9C4.40625 9 4.80469 8.83594 5.13281 8.50781C5.46094 8.17969 5.625 7.78125 5.625 7.3125C5.625 6.84375 5.46094 6.44531 5.13281 6.11719C4.80469 5.78906 4.40625 5.625 3.9375 5.625ZM7.3125 2.25C6.84375 2.25 6.44531 2.41406 6.11719 2.74219C5.78906 3.07031 5.625 3.46875 5.625 3.9375C5.625 4.40625 5.78906 4.80469 6.11719 5.13281C6.44531 5.46094 6.84375 5.625 7.3125 5.625C7.78125 5.625 8.17969 5.46094 8.50781 5.13281C8.83594 4.80469 9 4.40625 9 3.9375C9 3.46875 8.83594 3.07031 8.50781 2.74219C8.17969 2.41406 7.78125 2.25 7.3125 2.25ZM10.6875 12.375C10.2188 12.375 9.82031 12.5391 9.49219 12.8672C9.16406 13.1953 9 13.5938 9 14.0625C9 14.5312 9.16406 14.9297 9.49219 15.2578C9.82031 15.5859 10.2188 15.75 10.6875 15.75C11.1562 15.75 11.5547 15.5859 11.8828 15.2578C12.2109 14.9297 12.375 14.5312 12.375 14.0625C12.375 13.5938 12.2109 13.1953 11.8828 12.8672C11.5547 12.5391 11.1562 12.375 10.6875 12.375ZM14.0625 9C13.5938 9 13.1953 9.16406 12.8672 9.49219C12.5391 9.82031 12.375 10.2188 12.375 10.6875C12.375 11.1562 12.5391 11.5547 12.8672 11.8828C13.1953 12.2109 13.5938 12.375 14.0625 12.375C14.5312 12.375 14.9297 12.2109 15.2578 11.8828C15.5859 11.5547 15.75 11.1562 15.75 10.6875C15.75 10.2188 15.5859 9.82031 15.2578 9.49219C14.9297 9.16406 14.5312 9 14.0625 9Z" fill="#091521"/>
+											</svg>
+										</span>
+										Свой дизайн
+									</a>
+								</div>
+								<div class="col-12">
+									<a href="#!" class="catalog-btn"><img src="images/menu-icon.svg" alt="">Каталог товаров</a>
+								</div>
+							</div>
+							<div class="row menu-body-two">
+								<div class="center-assets">
+									<a href="#!" class="account-link">
+										<span class="assets-icon"><img src="images/account-icon.svg" alt=""></span>
+										<span class="assets-name">Кабинет</span>
+									</a>
+									<a href="#!" class="box-link">
+										<span class="assets-icon"><img src="images/box-icon.svg" alt=""></span>
+										<span class="assets-name">Где заказ?</span>
+									</a>
+									<a href="#!" class="compare-link">
+										<span class="assets-icon"><img src="images/insta.svg" alt=""></span>
+										<span class="assets-name">Instagram</span>
+									</a>
+									<a href="#!" class="favorite-link">
+										<span class="assets-icon"><img src="images/favorite-icon.svg" alt=""></span>
+										<span class="assets-name">Избранное</span>
+									</a>
+									<a href="#!" class="basket-link">
+										<span class="assets-icon"><img src="images/basket-icon.svg" alt=""></span>
+										<span class="assets-name">Корзина</span>
+									</a>
+								</div>
+								<div class="info-region">
+									<a href="tel:" class="region-tel">8 (495) 419-18-31</a>
+									<span>Работаем ежедневно с 09:00 до 21:00</span>
+									<div class="top-region">
+										<p><img src="images/ico-mappin.svg" alt=""> Ваш регион:</p>
+										<div class="dropdown region-drop">
+											<button class="region-btn dropdown-toggle" type="button">
+												Москва <img src="images/ico-chevron-down.svg" alt="">
+											</button>
+											<div class="region-menu">
+											  <a class="dropdown-item" href="#">Москва 2</a>
+											  <a class="dropdown-item" href="#">Москва 3</a>
+											  <a class="dropdown-item" href="#">Москва 4</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="menu-fut">
+								<a href="#!">Доставка</a>
+								<a href="#!">Партнерам</a>
+								<a href="#!">Дизайнерам</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="cotainer-fluid top-con pc">
+				<div class="container">
+					<div class="row head-top">
+						<div class="col-lg-6">
+							<div class="top-left">
+								<div class="top-region">
+									<p><img src="images/location-icon.svg" alt=""> Ваш регион:</p>
+									<div class="dropdown region-drop">
+										<button class="region-btn dropdown-toggle" type="button">
+											Москва <img src="images/drop-arrow.svg" alt="">
+										</button>
+										<div class="region-menu">
+										  <a class="dropdown-item" href="#">Москва 2</a>
+										  <a class="dropdown-item" href="#">Москва 3</a>
+										  <a class="dropdown-item" href="#">Москва 4</a>
+										</div>
+									</div>
+								</div>
+								<div class="top-tel">
+									<a href="tel:8 (495) 419-18-31">8 (495) 419-18-31</a>
+								</div>
+								<div class="top-schedule">
+									<p>Работаем ежедневно с 09:00 до 21:00</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="top-right">
+								<a href="#!">Доставка</a>
+								<a href="#!">Партнерам</a>
+								<a href="#!">Дизайнерам</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container pc">
+				<div class="row head-center">
+					<div class="col-lg-4">
+						<div class="center-left">
+							<a href="#!"><img src="images/logo.png" alt=""></a>
+							<p>Крутые принты для одежды и аксессуаров на любой вкус</p>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="center-right">
+							<div class="search">
+								<form action="#!" method="post" id="search-form">
+									<input type="search" name="search" id="search" placeholder="Поиск по товару, артикулу, названию">
+								</form>
+							</div>
+							<div class="center-assets">
+								<a href="#!" class="account-link">
+									<span class="assets-icon"><img src="images/account-icon.svg" alt=""></span>
+									<span class="assets-name">Кабинет</span>
+								</a>
+								<a href="#!" class="box-link">
+									<span class="assets-icon"><img src="images/box-icon.svg" alt=""></span>
+									<span class="assets-name">Где заказ?</span>
+								</a>
+								<a href="#!" class="compare-link">
+									<span class="assets-icon"><img src="images/insta.svg" alt=""></span>
+									<span class="assets-name">Instagram</span>
+								</a>
+								<a href="#!" class="favorite-link">
+									<span class="assets-icon"><img src="images/favorite-icon.svg" alt=""></span>
+									<span class="assets-name">Избранное</span>
+								</a>
+								<a href="#!" class="basket-link">
+									<span class="assets-icon"><img src="images/basket-icon.svg" alt=""></span>
+									<span class="assets-name">Корзина</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container pc">
+				<div class="row head-sub">
+					<div class="col-lg-4">
+						<div class="sub-left">
+							<a href="#!" class="catalog-btn"><img src="images/menu-icon.svg" alt="">Каталог товаров</a>
+							<a href="#!" class="art-btn">
+								<span>
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 18C7.37109 18 5.86523 17.5986 4.48242 16.7959C3.09961 15.9932 2.00684 14.9004 1.2041 13.5176C0.401367 12.1348 0 10.6289 0 9C0 7.37109 0.401367 5.86523 1.2041 4.48242C2.00684 3.09961 3.09961 2.00684 4.48242 1.2041C5.86523 0.401367 7.37109 0 9 0C10.3125 0 11.2031 0.161133 11.6719 0.483398C12.1406 0.805664 12.375 1.39453 12.375 2.25C12.375 2.625 12.2871 2.98242 12.1113 3.32227C11.9355 3.66211 11.7422 3.9375 11.5312 4.14844C11.3203 4.35938 11.127 4.59668 10.9512 4.86035C10.7754 5.12402 10.6875 5.37891 10.6875 5.625C10.6875 6.75 11.25 7.3125 12.375 7.3125C12.6211 7.3125 12.876 7.22461 13.1396 7.04883C13.4033 6.87305 13.6406 6.67969 13.8516 6.46875C14.0625 6.25781 14.3379 6.06445 14.6777 5.88867C15.0176 5.71289 15.375 5.625 15.75 5.625C16.5938 5.625 17.1797 5.86523 17.5078 6.3457C17.8359 6.82617 18 7.71094 18 9C18 10.2188 17.7627 11.3848 17.2881 12.498C16.8135 13.6113 16.1748 14.5693 15.3721 15.3721C14.5693 16.1748 13.6113 16.8135 12.498 17.2881C11.3848 17.7627 10.2188 18 9 18ZM5.0625 14.625C5.53125 14.625 5.92969 14.4609 6.25781 14.1328C6.58594 13.8047 6.75 13.4062 6.75 12.9375C6.75 12.4688 6.58594 12.0703 6.25781 11.7422C5.92969 11.4141 5.53125 11.25 5.0625 11.25C4.59375 11.25 4.19531 11.4141 3.86719 11.7422C3.53906 12.0703 3.375 12.4688 3.375 12.9375C3.375 13.4062 3.53906 13.8047 3.86719 14.1328C4.19531 14.4609 4.59375 14.625 5.0625 14.625ZM3.9375 5.625C3.46875 5.625 3.07031 5.78906 2.74219 6.11719C2.41406 6.44531 2.25 6.84375 2.25 7.3125C2.25 7.78125 2.41406 8.17969 2.74219 8.50781C3.07031 8.83594 3.46875 9 3.9375 9C4.40625 9 4.80469 8.83594 5.13281 8.50781C5.46094 8.17969 5.625 7.78125 5.625 7.3125C5.625 6.84375 5.46094 6.44531 5.13281 6.11719C4.80469 5.78906 4.40625 5.625 3.9375 5.625ZM7.3125 2.25C6.84375 2.25 6.44531 2.41406 6.11719 2.74219C5.78906 3.07031 5.625 3.46875 5.625 3.9375C5.625 4.40625 5.78906 4.80469 6.11719 5.13281C6.44531 5.46094 6.84375 5.625 7.3125 5.625C7.78125 5.625 8.17969 5.46094 8.50781 5.13281C8.83594 4.80469 9 4.40625 9 3.9375C9 3.46875 8.83594 3.07031 8.50781 2.74219C8.17969 2.41406 7.78125 2.25 7.3125 2.25ZM10.6875 12.375C10.2188 12.375 9.82031 12.5391 9.49219 12.8672C9.16406 13.1953 9 13.5938 9 14.0625C9 14.5312 9.16406 14.9297 9.49219 15.2578C9.82031 15.5859 10.2188 15.75 10.6875 15.75C11.1562 15.75 11.5547 15.5859 11.8828 15.2578C12.2109 14.9297 12.375 14.5312 12.375 14.0625C12.375 13.5938 12.2109 13.1953 11.8828 12.8672C11.5547 12.5391 11.1562 12.375 10.6875 12.375ZM14.0625 9C13.5938 9 13.1953 9.16406 12.8672 9.49219C12.5391 9.82031 12.375 10.2188 12.375 10.6875C12.375 11.1562 12.5391 11.5547 12.8672 11.8828C13.1953 12.2109 13.5938 12.375 14.0625 12.375C14.5312 12.375 14.9297 12.2109 15.2578 11.8828C15.5859 11.5547 15.75 11.1562 15.75 10.6875C15.75 10.2188 15.5859 9.82031 15.2578 9.49219C14.9297 9.16406 14.5312 9 14.0625 9Z" fill="#091521"/>
+									</svg>
+								</span>
+								Свой дизайн</a>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="sub-right">
+							<nav class="navbar navbar-expand-lg">
+								<div class="container-fluid p-0">
+								  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								  </button>
+								  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+									<ul class="navbar-nav">
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Новинки</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Женщинам</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Мужчинам</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Детям</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Сумки</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Товары для дома</a>
+									  </li>
+									  <li class="nav-item">
+										<a class="nav-link" href="#">Аксессуары</a>
+									  </li>
+									</ul>
+								  </div>
+								</div>
+							  </nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="main-sec">
+			<div class="container">
+				<div class="row main-rov">
+					<div class="main-slider">
+						<div class="main-item">
+							<img src="images/main-slide.png" alt="">
+							<div class="main-text">
+								<h1>Скидка на товары до 50%</h1>
+								<a href="#!">Смотреть товары</a>
+							</div>
+						</div>
+						<div class="main-item">
+							<img src="images/main-slide.png" alt="">
+							<div class="main-text">
+								<h1>Скидка на товары до 50%</h1>
+								<a href="#!">Смотреть товары</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="design-collection">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 title">
+						<h2>Коллекции дизайнов</h2>
+					</div>
+				</div>
+				<div class="row design-rov">
+					<div class="col-lg-2 col-md-4 col-4 design-col">
+						<div class="design-item">
+							<a href="#!" class="design-block">
+								<span class="design-text">Мультфильмы</span>
+								<span class="design-img"><img src="images/collection1.png" alt=""></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-4 design-col">
+						<div class="design-item">
+							<a href="#!" class="design-block">
+								<span class="design-text">Игры</span>
+								<span class="design-img"><img src="images/collection2.png" alt=""></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-4 design-col">
+						<div class="design-item">
+							<a href="#!" class="design-block">
+								<span class="design-text">Музыка</span>
+								<span class="design-img"><img src="images/collection3.png" alt=""></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-4 design-col">
+						<div class="design-item">
+							<a href="#!" class="design-block">
+								<span class="design-text">Кино</span>
+								<span class="design-img"><img src="images/collection4.png" alt=""></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-4 design-col">
+						<div class="design-item">
+							<a href="#!" class="design-block">
+								<span class="design-text">Подарки</span>
+								<span class="design-img"><img src="images/collection5.png" alt=""></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-4 design-col">
+						<div class="design-item">
+							<a href="#!" class="design-block d-gradient">
+								<span class="design-text">Еще 25 коллекций</span>
+								<span class="design-img"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 accessory">
+						<a href="#!" class="collection-item">
+							<img src="images/elements1.png" alt="" class="element-img">
+							<div class="collection-text">
+								<span class="collection-date">Коллекция 2021</span>
+								<h2>Аксессуары</h2>
+								<p>Подбирайте удобные аксессуары для комфортной жизни в городе</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 top">
+						<a href="#!" class="collection-item">
+							<img src="images/elements2.png" alt="" class="element-img">
+							<div class="collection-text">
+								<span class="collection-date">2021</span>
+								<h2>Топ наших <br> дизайнеров</h2>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-lg-6 bag">
+						<a href="#!" class="collection-item">
+							<img src="images/elements3.png" alt="" class="element-img">
+							<div class="collection-text">
+								<h2>Сумки</h2>
+								<p>Стильный образ для <br> городской среды</p> 
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-6 for-home">
+						<a href="#!" class="collection-item">
+							<img src="images/elements4.png" alt="" class="element-img">
+							<div class="collection-text">
+								<span class="collection-date">Безупречный вкус</span>
+								<h2>Товары для дома</h2>
+								<p>Создавайте стильный образ и расставляйте акценты на детали</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="index-catalog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 title">
+						<h2>Каталог товаров</h2>
+						<a href="#!" class="black-btn">Топ дизайнов 2021</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img1.png" alt="">
+								</span>
+								<span class="ic-text">Свой дизайн</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img2.png" alt="">
+								</span>
+								<span class="ic-text">Новинки</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img3.png" alt="">
+								</span>
+								<span class="ic-text">Женщинам</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img4.png" alt="">
+								</span>
+								<span class="ic-text">Школа 2021</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img5.png" alt="">
+								</span>
+								<span class="ic-text">Мужчинам</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img6.png" alt="">
+								</span>
+								<span class="ic-text">Детям</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img7.png" alt="">
+								</span>
+								<span class="ic-text">Сумки</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img8.png" alt="">
+								</span>
+								<span class="ic-text">Товары для дома</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img9.png" alt="">
+								</span>
+								<span class="ic-text">Аксессуары</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img10.png" alt="">
+								</span>
+								<span class="ic-text">Подарки</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-4 in-cat-col">
+						<div class="index-catalog-block gradient-box">
+							<a href="#!" class="index-catalog-link">
+								<span class="ic-img">
+									<img src="images/catalog-img11.png" alt="">
+								</span>
+								<span class="ic-text">Спорт</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="client-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 title">
+						<h1>4 324</h1>
+						<h2>довольных клиентов</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="client-slider">
+						<div class="client-item">
+							<div class="client-top">
+								<p>Спасибо Guash за толстовку. Очень понравилась! Материал просто супер, при жаре в Москве я даже не вспотел. Качество рисунка тоже супер! Буду заказывать только у вас!</p>
+								<div class="client-img">
+									<img src="images/client-comment.jpg" alt="">
+								</div>
+							</div>
+							<div class="client-bottom">
+								<div class="client-avatar">
+									<img src="images/client-avatar.png" alt="">
+								</div>
+								<div class="client-name">
+									<span>4 июля 2020</span>
+									<p>Дмитрий Иванов</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="client-item orange-bg">
+							<div class="client-top">
+								<p>Супер, супер! Пришло платье, как на картинке. Отличного качество с ОЧЕЕЕНЬ быстрой доставкой!
+									Советую всем+классный бонус с выбором своего рисунка 😀</p>
+								<div class="client-img">
+									<img src="images/client-comment.jpg" alt="">
+								</div>
+							</div>
+							<div class="client-bottom">
+								<div class="client-avatar">
+									<img src="images/client-avatar2.png" alt="">
+								</div>
+								<div class="client-name">
+									<span>12 мая 2020</span>
+									<p>Екатерина Бодрова</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="client-item">
+							<div class="client-top">
+								<p>Спасибо Guash за толстовку. Очень понравилась! Материал просто супер, при жаре в Москве я даже не вспотел. Качество рисунка тоже супер! Буду заказывать только у вас!</p>
+								<div class="client-img">
+									<img src="images/client-comment.jpg" alt="">
+								</div>
+							</div>
+							<div class="client-bottom">
+								<div class="client-avatar">
+									<img src="images/client-avatar.png" alt="">
+								</div>
+								<div class="client-name">
+									<span>4 июля 2020</span>
+									<p>Дмитрий Иванов</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="client-item orange-bg">
+							<div class="client-top">
+								<p>Супер, супер! Пришло платье, как на картинке. Отличного качество с ОЧЕЕЕНЬ быстрой доставкой!
+									Советую всем+классный бонус с выбором своего рисунка 😀</p>
+								<div class="client-img">
+									<img src="images/client-comment.jpg" alt="">
+								</div>
+							</div>
+							<div class="client-bottom">
+								<div class="client-avatar">
+									<img src="images/client-avatar2.png" alt="">
+								</div>
+								<div class="client-name">
+									<span>12 мая 2020</span>
+									<p>Екатерина Бодрова</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="client-item">
+							<div class="client-top">
+								<p>Спасибо Guash за толстовку. Очень понравилась! Материал просто супер, при жаре в Москве я даже не вспотел. Качество рисунка тоже супер! Буду заказывать только у вас!</p>
+								<div class="client-img">
+									<img src="images/client-comment.jpg" alt="">
+								</div>
+							</div>
+							<div class="client-bottom">
+								<div class="client-avatar">
+									<img src="images/client-avatar.png" alt="">
+								</div>
+								<div class="client-name">
+									<span>4 июля 2020</span>
+									<p>Дмитрий Иванов</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="guash-video">
+			<div class="container">
+				<div class="row video-rov">
+					<div class="col-lg-7 title">
+						<div class="video-left">
+							<h2>Интернет-магазин Гуашь</h2>
+							<p>Интернет-магазин Гуашь. Здесь вы найдете товары под свои предпочтения: мужскую куртку на осень, женское платье на праздник, детские футболки</p>
+							<a href="#!" class="black-btn">Узнать подробнее</a>
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="video-right">
+							<img src="images/guash-video-bg.png" alt="" class="guash-bg">
+							<div class="video-btn">
+								<a href="#!">Cмотреть видео</a>
+							</div>
+							<div class="video-bg">
+								<img src="images/video-bg.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-3 col-md-6 guash-delivery">
+						<div class="guash-item">
+							<div class="guash-head">
+								<p>Быстрая доставка</p>
+								<span><img src="images/delivery-icon.svg" alt=""></span>
+							</div>
+							<div class="guash-text">
+								<p>Бережно доставляем товары  по России за 24 часа</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 guash-delivery">
+						<div class="guash-item">
+							<div class="guash-head">
+								<p>Клиентский сервис</p>
+								<span><img src="images/call-icon.svg" alt=""></span>
+							</div>
+							<div class="guash-text">
+								<p>Отвечаем на вопросы покупателей в течение 10 мин.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 guash-delivery">
+						<div class="guash-item">
+							<div class="guash-head">
+								<p>Бонусы за покупки</p>
+								<span><img src="images/bonus-box-icon.svg" alt=""></span>
+							</div>
+							<div class="guash-text">
+								<p>Дарим подарки и скидки до 70% всем покупателям</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 guash-delivery">
+						<div class="guash-item">
+							<div class="guash-head">
+								<p>Гарантия качества</p>
+								<span><img src="images/medal-icon.svg" alt=""></span>
+							</div>
+							<div class="guash-text">
+								<p>Соответствуем требованиям и стандартам качества</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="map-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 title">
+						<h2>Адреса магазинов</h2>
+						<a href="#!">Перейти в раздел</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 map" id="map-wrap">
+						<iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3A38362070d5a16c5fbdf08a71ceb28a2bc17ae7be12d72fe598d3aafbb763b088&amp;source=constructor" width="100%" height="430" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="watched-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 title">
+						<h2>Ранее вы смотрели</h2>
+					</div>
+				</div>
+				<div class="watched-slider-content">
+					<div class="watched-slider">
+						<div class="watched-block">
+							<a href="#!" class="watched-item">
+								<span class="watched-img">
+									<img src="images/watched-slide-img.png" alt="">
+								</span>
+								<span class="watched-text">
+									<span class="w-text">Плед "Леди баг" с мягким ворсом, плюшевый на</span>
+									<span class="w-price">1 560 ₽</span>
+								</span>
+							</a>
+						</div>
+						<div class="watched-block">
+							<a href="#!" class="watched-item">
+								<span class="watched-img">
+									<img src="images/watched-slide-img2.png" alt="">
+								</span>
+								<span class="watched-text">
+									<span class="w-text">Плед "Леди баг" с мягким ворсом, плюшевый на</span>
+									<span class="w-price">1 560 ₽</span>
+								</span>
+							</a>
+						</div>
+						<div class="watched-block">
+							<a href="#!" class="watched-item">
+								<span class="watched-img">
+									<img src="images/watched-slide-img3.png" alt="">
+								</span>
+								<span class="watched-text">
+									<span class="w-text">Плед "Леди баг" с мягким ворсом, плюшевый на</span>
+									<span class="w-price">1 560 ₽</span>
+								</span>
+							</a>
+						</div>
+						<div class="watched-block">
+							<a href="#!" class="watched-item">
+								<span class="watched-img">
+									<img src="images/watched-slide-img.png" alt="">
+								</span>
+								<span class="watched-text">
+									<span class="w-text">Плед "Леди баг" с мягким ворсом, плюшевый на</span>
+									<span class="w-price">1 560 ₽</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<div class="socials mob">
+							<a href="#!"><img src="images/vk.svg" alt=""></a>
+							<a href="#!"><img src="images/facebook.svg" alt=""></a>
+							<a href="#!"><img src="images/youtube.svg" alt=""></a>
+							<a href="#!"><img src="images/insta.svg" alt=""></a>
+						</div>
+						<div class="ftr-menu-block">
+							<div class="ftr-menu">
+								<p class="menu-title">Guash Store <img src="images/ico-chevron-down.svg" alt="" class="mob"></p>
+								<div class="menu-links">
+									<a href="#!">О нас</a>
+									<a href="#!">Производство</a>
+									<a href="#!">Наша цель</a>
+								</div>
+							</div>
+							<div class="ftr-menu">
+								<p class="menu-title">Помощь и поддержка <img src="images/ico-chevron-down.svg" alt="" class="mob"></p>
+								<div class="menu-links">
+									<a href="#!">Доставка</a>
+									<a href="#!">Возврат и обмен</a>
+									<a href="#!">Как оформить заказ</a>
+									<a href="#!">Где заказ?</a>
+								</div>
+							</div>
+							<div class="ftr-menu">
+								<p class="menu-title">Сотрудничество <img src="images/ico-chevron-down.svg" alt="" class="mob"></p>
+								<div class="menu-links">
+									<a href="#!">Дизайнерам</a>
+									<a href="#!">Блогерам</a>
+									<a href="#!">Партнерам</a>
+									<a href="#!">Оптовикам</a>
+								</div>
+							</div>
+							<div class="ftr-menu">
+								<p class="menu-title">Обслуживание клиентов <img src="images/ico-chevron-down.svg" alt="" class="mob"></p>
+								<div class="menu-links">
+									<a href="#!">Связаться с нами</a>
+									<a href="#!">Способы оплаты</a>
+									<a href="#!">Бонусные баллы</a>
+									<a href="#!">Личный кабинет</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="ftr-tel">
+							<a href="tel:">8 (495) 419–18–31</a>
+							<span>Eжедневно с 9:00 до 19:00</span>
+							<p>12+</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="ftr-social">
+							<div class="social-left">
+								<a href="#!"><img src="images/logo.png" alt=""></a>
+							</div>
+							<div class="social-right">
+								<div class="socials pc">
+									<a href="#!"><img src="images/vk.svg" alt=""></a>
+									<a href="#!"><img src="images/facebook.svg" alt=""></a>
+									<a href="#!"><img src="images/youtube.svg" alt=""></a>
+									<a href="#!"><img src="images/insta.svg" alt=""></a>
+								</div>
+								<div class="social-btn">
+									<a href="#!">Подарок за подписку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid copyright-con">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 copyright">
+							<div class="copy-text">
+								<p>© 2020 «Гуашь принт» — Стильные принты на одежду и сувениры с широкой тематикой.</p>
+							</div>
+							<div class="copy-pay">
+								<a href="#!"><img src="images/visa.svg" alt=""></a>
+								<a href="#!"><img src="images/mastercard.svg" alt=""></a>
+								<a href="#!"><img src="images/yandex-money.svg" alt=""></a>
+								<a href="#!"><img src="images/mir.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="libs/bootstrap5/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>	
+	<script src="js/script.js"></script>
+
+	<script>
+		document.addEventListener('click', function(e) {
+			var map = document.querySelector('#map-wrap iframe')
+			if(e.target.id === 'map-wrap') {
+				map.style.pointerEvents = 'all'
+			} else {
+				map.style.pointerEvents = 'none'
+			}
+		})
+	</script>
+</body>
+</html>
