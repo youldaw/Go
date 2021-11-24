@@ -206,16 +206,17 @@ header .region-drop .region-menu a {
 header .region-drop .region-menu a:last-child {
     margin-bottom: 0;
 }
-header .head-top .top-left .top-tel a {
+header .head-top .top-left .top-tel button {
     font-family: 'PT Root UI Bold', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
     margin-right: 16px;
+    padding: 0;
 }
 header .head-top .top-right a:hover,
-header .head-top .top-left .top-tel a:hover {
+header .head-top .top-left .top-tel button:hover {
     opacity: .6;
 }
 header .head-top .top-left .top-schedule p {
@@ -295,7 +296,26 @@ header .center-assets a span.assets-name {
 header .center-assets a:hover {
     transform: scale(1.1);
 }
+header {
+    position: relative;
+}
 /* /////// */
+header .menu-con {
+    transition: .3s all ease;
+}
+header .menu-con.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%; 
+	background: #fff;
+    z-index: 10;
+    transition: .3s all ease;
+    margin: 0 auto;
+    padding: 16px 0;
+    box-shadow: 0 1px 5px rgba(0,0,0, .14);
+}
 header .head-sub .sub-left {
     display: flex;
     align-items: center;
@@ -467,8 +487,9 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     overflow: hidden;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    padding-bottom: 10px;
 }
 .design-collection .design-block:after {
     content: "";
@@ -1325,6 +1346,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
 .catalog-sec .dropdown button.show img {
     transform: rotate(0);
 }
+header .top-tel .dropdown-menu,
 .catalog-sec .dropdown-menu {
     background: #FFFFFF;
     border: 1px solid #DCDCDC;
@@ -1332,6 +1354,7 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     border-radius: 8px;
     margin-top: 4px;
 }
+header .top-tel .dropdown-menu li a,
 .catalog-sec .dropdown-menu li a {
     font-family: 'PT Root UI Bold';
     font-weight: bold;
@@ -1340,12 +1363,15 @@ header .navbar-expand-lg .navbar-nav .nav-link:hover {
     color: #091521;
     padding: 0;
 }
+header .top-tel .dropdown-menu li a:hover,
 .catalog-sec .dropdown-menu li a:hover {
     background: transparent;
 }
+header .top-tel .dropdown-menu li,
 .catalog-sec .dropdown-menu li {
     padding: 5px 15px;
 }
+header .top-tel .dropdown-menu li:hover,
 .catalog-sec .dropdown-menu li:hover {
     background-color: #E9ECEF;
 }
@@ -1930,6 +1956,31 @@ footer .copyright .copy-link p a {
 
 
 @media only screen and (max-width: 480px){
+    footer .copyright .copy-pay a {
+        margin-left: 15px;
+    }
+    footer .copyright .copy-pay a:first-child {
+        margin-left: 0;
+    }
+    .client-sec .client-bottom .client-name p {
+        font-size: 14px;
+    }
+    .client-sec .client-bottom .client-name span {
+        font-size: 12px;
+    }
+    .client-sec .client-bottom .client-avatar {
+        margin-right: 15px;
+    }
+    .client-sec .client-bottom .client-avatar img {
+        height: 50px;
+    }
+    .client-sec .client-top .client-img img,
+    .client-sec .client-top p {
+        height: 100px;
+    }
+    .guash-video .video-left p {
+        margin: 0 0 20px 0;
+    }
     .catalog-sec .gradient-box a.black-btn {
         padding: 10px 16px;
     }
@@ -1949,7 +2000,7 @@ footer .copyright .copy-link p a {
     .design-collection .design-block {
         height: 110px;
         margin-bottom: 10px;
-    align-items: flex-end;
+        align-items: flex-end;
     }
     .design-collection .design-block .design-text {
         font-size: 10px;
@@ -1988,7 +2039,7 @@ footer .copyright .copy-link p a {
     }
     .design-collection .collection-item .element-img {
         object-fit: contain;
-        left: 35px;
+        left: 0;
     }
     .black-btn {
         font-size: 14px;
@@ -2258,6 +2309,11 @@ footer .copyright .copy-link p a {
     .client-sec .client-top p {
         margin-bottom: 12px;
         font-size: 14px;
+        line-height: 18px;
+    }
+    .client-sec .client-top {
+        padding: 15px;
+        margin-bottom: 20px;
     }
     .client-sec .client-slider .owl-nav button.owl-next {
         right: 38%;
@@ -2273,7 +2329,19 @@ footer .copyright .copy-link p a {
         opacity: 1;
     }
     .client-sec .client-slider {
-        padding-bottom: 115px;
+        padding-bottom: 80px;
+    }
+    .client-sec .title h2 {
+        margin-bottom: 0;
+    }
+    .guash-video .video-rov .title {
+        z-index: 2;
+    }
+    .guash-video .video-col {
+        position: absolute;
+        z-index: 1;
+        right: -100px;
+        bottom: -35px;
     }
     .guash-video .video-right .video-bg {
         text-align: center;
@@ -2300,12 +2368,15 @@ footer .copyright .copy-link p a {
     }
     .guash-video {
         background-color: #FBF1F4;
+        padding-top: 30px;
     }
     .guash-video .col-lg-5 {
         overflow: hidden;
     }
     .guash-video .video-rov {
         margin-bottom: 0;
+        position: relative;
+        padding-bottom: 100px;
     }
     .guash-video .video-right .video-bg {
         margin-bottom: 50px;
@@ -2416,18 +2487,27 @@ footer .copyright .copy-link p a {
         width: 100%;
     }
     footer .copyright {
-    flex-direction: column;
-    align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
     footer .copyright .copy-pay {
         padding: 25px 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    footer .copyright .copy-text p {
+        width: auto;
+    }
+    .in-cat-col {
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .index-catalog .title {
-    flex-direction: column;
-    align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .index-catalog .title h2 {
-        margin-bottom: 16px;
+        margin-top: 16px;
     }
     .catalog-sec .cat-block .cat-img img {
         height: auto;

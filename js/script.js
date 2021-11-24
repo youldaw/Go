@@ -46,7 +46,7 @@ $(document).ready(function () {
         navText: ['<img src="images/slide-prev-arrow.png" alt="">','<img src="images/slide-next-arrow.png" alt="">'],
         responsive:{
             0:{
-                items:1,
+                items:1.3,
             },
             600:{
                 items:1,
@@ -71,7 +71,7 @@ $(document).ready(function () {
         navText: ['<img src="images/slide-prev-arrow.png" alt="">','<img src="images/slide-next-arrow.png" alt="">'],
         responsive:{
             0:{
-                items:1,
+                items:1.2,
             },
             600:{
                 items:2,
@@ -158,6 +158,15 @@ $(document).ready(function () {
         $input.val(parseInt($input.val()) + 1);
         $input.change();
         return false;
+    });
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 200) {
+             $('.menu-con').addClass('sticky');
+         }
+         else {
+             $('.menu-con').removeClass('sticky');
+         }
     });
 
 
